@@ -1,0 +1,28 @@
+# User configuration
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8 
+
+# customization
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
+
+alias psg="ps axu  | grep"
+PHP_AUTOCONF="/usr/local/bin/autoconf"
+
+# nvm
+#export NVM_DIR=~/.nvm
+#source $(brew --prefix nvm)/nvm.sh
+
+# rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# golang
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/go
+
+# direnv
+eval "$(direnv hook zsh)"
